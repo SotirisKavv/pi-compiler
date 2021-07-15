@@ -1,0 +1,17 @@
+// This is a program to calculate the sum of natural numbers recursively
+
+func addNumbers(n int) int {
+    if (n != 0)
+        return n + addNumbers(n-1);
+    else
+        return n;
+}
+
+const message = "Enter a positive integer: " string;
+
+func begin() {
+    var num int;
+    writeString(message);
+    num = readInt();
+    writeInt(addNumbers(num));
+}

@@ -1,0 +1,22 @@
+/* This is a program to compute the GCD of 2 integers */
+
+const message = "Enter two positive integers: " string;
+
+func begin() {
+    var n1, n2 int;
+
+    writeString(message);
+    n1 = readInt();
+    n2 = readInt();
+
+    while (n1!=n2) {
+        if (n1 > n2)
+            n1 = n1 - n2;
+        else
+            n2 = n2 - n1;
+    }
+
+    writeInt(n1);
+
+    return;
+}
